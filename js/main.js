@@ -1,17 +1,13 @@
 (() => {
+  let audio = document.querySelector("audio"),
+      playButton = document.querySelector(".controls button");
 
-console.log('you wake up and and go into a state of horror as you notice the horse head on your left hand side');
+  function playAudio() {
+    document.querySelectorAll("path").forEach(path => path.classList.add("textanimation"))
+    document.querySelector("#svgcontainer").classList.add("containeranimation")
+    audio.play()
+  }
 
-let audio = new Audio('../audio/the godfather best scene_1.mp3'),
-	playButton = document.querySelector(".playbtn");
-
-function playSequence()
-{
-document.querySelector(".svglayout").classList.add(".svglayoutanimation")
-audio.play()
-}
-
-playButton.addEventListener("Click", playSequence);
-
+  playButton.addEventListener("click", playAudio);
 
 })();

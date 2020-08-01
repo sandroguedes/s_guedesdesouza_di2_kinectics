@@ -1,133 +1,64 @@
-body
-{
-background: url(../images/bg.jpg);
-background-size:cover;
-background-position:center;
-background-repeat:no-repeat;
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+
+  box-sizing: border-box;
+}
+.controls {
+  text-align: center;
 }
 
-p
-{
-color:white;
-font-size:1em;
-font-family:sans-serif;
+.controls button {
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 30px;
 }
 
-.hidden
-{
-display: none;
+.hidden {
+  display: none;
 }
 
-.headercontent
-{
-display:flex;
-flex-direction:row;
-justify-content:space-between;
+.svgbg {
+  margin-top: 30px;
+  width: 600px;
+  height: 600px;
+  margin: 0 auto;
+  background-color:black;
+  overflow: hidden;
 }
 
-.logo
-{
-width:165px;
-height:130px;
+.svgcontainer {
+  position: relative;
 }
 
-.buttonscontainer
-{
-display:flex;
-flex-direction:column;
-justify-content:flex-end;
+#typelayout path {
+  opacity: 0;
 }
 
-.buttonalign
-{
-display:flex;
-flex-direction:row;
-justify-content:flex-end;
+.textanimation {
+  animation: fadewords 0.2s forwards;
 }
 
-.playbtn
-{
-height:30px;
-width:30px;
-padding:10px;
-margin-right:1.3vw;
-transition: .4s;
+.containeranimation {
+  animation: animatecontainer 62s linear 1s forwards;
 }
 
-.playbtn:hover
-{
-height:35px;
-width:35px;
-padding:5px;
-cursor:pointer;
-}
 
-.refreshbtn
-{
-height:30px;
-width:30px;
-padding:10px;
-transition: .4s;
-}
+/**
+@keyframes animatecontainer {
+0% 
+100% 
 
-.refreshbtn:hover
-{
-height:35px;
-width:35px;
-padding:5px;
-margin-left:0.25vw;
-transform:rotate(180deg);
-cursor:pointer;
-}
+/**
+FULL { transform: rotate(0deg) translateX(0px) translateY(0px) scale(1);}
 
-.main
-{
-display:flex;
-flex-direction:column;
-justify-content:center;
-}
+Phrase 1-1 ST { transform: rotate(0deg) translateX(4300px) translateY(4300px) scale(15);}
+Phrase 1-1 END { transform: rotate(0deg) translateX(750px) translateY(4300px) scale(15);}
+Phrase 1-1->1-2 TR { transform: rotate(0deg) translateX(750px) translateY(4300px) scale(15);}
+Phrase 1-2 ST { transform: rotate(0deg) translateX(2000px) translateY(2000px) scale(10);}
 
-.container
-{
-max-width:1200px;
-margin: 0 auto;
-}
 
-.header
-{
-height:15vh;
-background-color:rgba(0, 0, 0, 0.9);
-}
 
-.svgcontainer
-{
-display:flex;
-flex-direction:row;
-justify-content:center;
-}
-
-.svglayout
-{
-height:78vh;
-width: 55vw;
-display:flex;
-flex-direction:column;
-justify-content:center;
-background-color:rgba(0, 0, 0);
-box-shadow: 0px 0px 50px 5px rgba(0, 0, 0);
-}
-
-.svglayoutanimation
-{
-
-}
-
-.footer
-{
-height:7vh;
-background-color:rgba(0, 0, 0, 0.9);
-display:flex;
-flex-direction:column;
-justify-content:center;
-text-align:center;
-}
+Phrase 2-1 ST { transform: rotate(0deg) translateX(1800px) translateY(1500px) scale(7);}
+Phrase 2-1 END { transform: rotate(0deg) translateX(1800px) translateY(1500px) scale(7);}
