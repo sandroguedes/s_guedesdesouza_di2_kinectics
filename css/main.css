@@ -1,56 +1,287 @@
-* {
-  margin: 0;
-  padding: 0;
-  border: none;
-
-  box-sizing: border-box;
-}
-.controls {
-  text-align: center;
+*
+{
+margin: 0;
+padding: 0;
+border: none;
+box-sizing: border-box;
 }
 
-.controls button {
-  padding: 10px;
-  cursor: pointer;
-  border-radius: 30px;
+.controls
+{
+text-align: center;
 }
 
-.hidden {
-  display: none;
+.controls button
+{
+padding: 10px;
+cursor: pointer;
+border-radius: 30px;
 }
 
-.svgbg {
-  margin-top: 30px;
-  width: 600px;
-  height: 600px;
-  margin: 0 auto;
-  background-color:black;
-  overflow: hidden;
+.hidden
+{
+display: none;
 }
 
-.svgcontainer {
-  position: relative;
+.svgbg
+{
+margin-top: 30px;
+width: 650px;
+height: 650px;
+margin: 0 auto;
+background-color:black;
+overflow: hidden;
 }
 
-#typelayout path {
-  opacity: 0;
+.svgcontainer
+{
+position: relative;
 }
 
-.textanimation {
-  animation: fadewords 0.2s forwards;
+.textanimation
+{
+animation: fade_in_phrases .5s ease forwards;
 }
 
-.containeranimation {
-  animation: animatecontainer 62s linear 1s forwards;
+@keyframes fade_in_phrases
+{
+  0%{opacity:0;}
+  100%{opacity:1;}
+}
+
+.phrase_1_1 path
+{
+  opacity:0;
+  animation-delay:.5s;
+}
+
+.phrase_1_2 path
+{
+  opacity:0;
+  animation-delay:1.8s;
+  animation-duration:2.5s;
+}
+
+.phrase_2_1 path
+{
+  opacity:0;
+  animation-delay:7s;
+  animation-duration:1.7s;
+}
+
+.phrase_2_2 path
+{
+  opacity:0;
+  animation-delay:9s;
+  animation-duration:1s;
+}
+
+.phrase_2_3 path
+{
+  opacity:0;
+  animation-delay:10.5s;
+  animation-duration:1s;
+}
+
+.phrase_3_1 path
+{
+  opacity:0;
+  animation-delay:13s;
+  animation-duration:1s;
+}
+
+.phrase_3_2 path
+{
+  opacity:0;
+  animation-delay:14.2s;
+  animation-duration:1s;
+}
+
+.phrase_3_3 path
+{
+  opacity:0;
+  animation-delay:15s;
+  animation-duration:1s;
+}
+
+.phrase_4_1 path
+{
+  opacity:0;
+  animation-delay:17.5s;
+  animation-duration:1s;
+}
+
+.phrase_4_2 path
+{
+  opacity:0;
+  animation-delay:19.5s;
+  animation-duration:1s;
+}
+
+.phrase_5_1 path
+{
+  opacity:0;
+  animation-delay:24s;
+  animation-duration:.5s;
+}
+
+.phrase_5_2 path
+{
+  opacity:0;
+  animation-delay:24.5s;
+  animation-duration:.5s;
+}
+
+.phrase_5_3 path
+{
+  opacity:0;
+  animation-delay:24.8s;
+  animation-duration:.5s;
+}
+
+.phrase_6_1 path
+{
+  opacity:0;
+  animation-delay:26.4s;
+  animation-duration:1.7s;
+}
+
+.phrase_7_1 path
+{
+  opacity:0;
+  animation-delay:30s;
+  animation-duration:1.5s;
+}
+
+.phrase_7_2 path
+{
+  opacity:0;
+  animation-delay:33s;
+  animation-duration:1s;
+}
+
+.phrase_8_1 path
+{
+  opacity:0;
+  animation-delay:38s;
+  animation-duration:1s;
+}
+
+.phrase_8_2 path
+{
+  opacity:0;
+  animation-delay:39s;
+  animation-duration:1s;
+}
+
+.phrase_9_1 path
+{
+  opacity:0;
+  animation-delay:40s;
+  animation-duration:1s;
+}
+
+.phrase_10_1 path
+{
+  opacity:0;
+  animation-delay:41s;
+  animation-duration:1s;
+}
+
+.phrase_10_2 path
+{
+  opacity:0;
+  animation-delay:43s;
+  animation-duration:1s;
+}
+
+.phrase_11_1 path
+{
+  opacity:0;
+  animation-delay:48.5s;
+  animation-duration:1s;
+}
+
+.phrase_11_2 path
+{
+  opacity:0;
+  animation-delay:50s;
+  animation-duration:.8s;
+}
+
+.phrase_11_3 path
+{
+  opacity:0;
+  animation-delay:51s;
+  animation-duration:.8s;
+}
+
+.fucktangle rect
+{
+  opacity:0;
+  animation-delay:52s;
+  animation-duration:.8s;
+}
+
+.phrase_12_1 path
+{
+  opacity:0;
+  animation-delay:55s;
+  animation-duration:1.5s;
+}
+
+.phrase_12_2 path
+{
+  opacity:0;
+  animation-delay:58s;
+  animation-duration:1.5s;
+}
+
+.phrase_13_1 path
+{
+  opacity:0;
+  animation-delay:60.5s;
+  animation-duration:1s;
+}
+
+.phrase_14_1 path
+{
+  opacity:0;
+  animation-delay:62s;
+  animation-duration:1s;
+}
+
+.Mr_Corleone
+{
+  scale:1.4;
+  transform: translateX(0px) translateY(15px);
+}
+
+/*
+
+.textanimation
+{
+animation: fade_in_phrases .5s ease forwards;
+}
+
+@keyframes fade_in_phrases
+{
+  0%{opacity:0;}
+  100%{opacity:1;}
 }
 
 
-/**
-@keyframes animatecontainer {
+.containeranimation
+{
+animation: animatecontainer 62s linear 1s forwards;
+}
+
+
+@keyframes animatecontainer
+{
 0% 
 100% 
 
-/**
 FULL { transform: rotate(0deg) translateX(0px) translateY(0px) scale(1);}
 
 Phrase 1-1 ST { transform: rotate(0deg) translateX(4300px) translateY(4300px) scale(15);}
